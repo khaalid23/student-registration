@@ -1,5 +1,5 @@
 # student-registration
-Full-stack Student Registration (React, Tailwind, TypeScript, Node.js, MySQL).
+Student Registration (React, Tailwind, TypeScript, Node.js, MySQL).
 
 # 🎓 Student Registration System
 
