@@ -41,7 +41,7 @@ This project allows students to register, view, and manage their profiles via a 
 ### Backend (`server`)
 ```bash
 /src
-  /controllers     → API logic for routes
+  /prisma     → API logic for routes
   /routes          → Express routes
   /models          → Database models (Prisma/MySQL)
   /middlewares     → Auth & error handling
