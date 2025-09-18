@@ -1,0 +1,29 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Program {
+  CS
+  IT
+  EE
+  ME
+  BA
+}
+
+model Student {
+  id          Int      @id @default(autoincrement())
+  firstName   String
+  lastName    String
+  email       String   @unique
+  phone       String?
+  dateOfBirth DateTime
+  address     String?
+  program     Program
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
