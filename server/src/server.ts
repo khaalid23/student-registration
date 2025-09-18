@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import { PrismaClient } from "@prisma/client";
 import { z } from "zod";
 dotenv.config();
+
 const app = express();
 const prisma = new PrismaClient();
 const PORT = process.env.PORT ? Number(process.env.PORT) : 4000;
